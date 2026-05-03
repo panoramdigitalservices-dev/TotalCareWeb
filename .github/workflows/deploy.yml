@@ -19,10 +19,10 @@ jobs:
           dotnet-version: '9.0.x'    
 
       - name: Restore Dependencies
-        run: dotnet restore TotalCareEngineering/TotalCareEngineering.csproj
+        run: dotnet restore TotalCareEngineering.csproj
 
       - name: Publish Blazor App
-        run: dotnet publish TotalCareEngineering/TotalCareEngineering.csproj -c Release -o release --nologo
+        run: dotnet publish TotalCareEngineering.csproj -c Release -o release --nologo
 
       - name: Fix Client-Side Routing
         run: cp release/wwwroot/index.html release/wwwroot/404.html
