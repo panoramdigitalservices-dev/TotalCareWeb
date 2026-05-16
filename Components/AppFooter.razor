@@ -1,0 +1,143 @@
+﻿@* @namespace TotalCareEngineering.Components
+
+<AppFooter class="tc-footer">
+    <div class="tc-footer__inner">
+        <div class="tc-footer__brand">TOTALCARE ENGINEERING SERVICES (PVT) LTD.</div>
+        <div class="tc-footer__tagline">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z" /><path d="M2 17l10 5 10-5" /><path d="M2 12l10 5 10-5" /></svg>
+            One Roof. All Engineering Solutions. Coming Soon!
+        </div>
+    </div>
+</AppFooter>
+
+<style>
+    .tc-footer {
+        background: linear-gradient(135deg, var(--tc-orange) 0%, var(--tc-orange-d) 100%);
+        padding: clamp(1.75rem, 4vw, 3rem) clamp(1.25rem, 4vw, 3rem);
+        position: relative;
+        overflow: hidden;
+    }
+
+        .tc-footer::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            pointer-events: none;
+            background: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23fff' fill-opacity='0.05'%3E%3Cpath d='M0 0h20v20H0zM20 20h20v20H20z'/%3E%3C/g%3E%3C/svg%3E");
+        }
+
+    .tc-footer__inner {
+        position: relative;
+        z-index: 2;
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+        text-align: center;
+    }
+
+    .tc-footer__brand {
+        font-family: 'Bebas Neue', 'Barlow', sans-serif;
+        font-size: clamp(1rem, 3vw, 1.8rem);
+        letter-spacing: 0.06em;
+        color: var(--tc-coal);
+        line-height: 1.1;
+    }
+
+    .tc-footer__tagline {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        font-size: clamp(0.75rem, 1.5vw, 0.92rem);
+        font-weight: 400;
+        color: rgba(15,10,5,0.72);
+    }
+
+</style>
+
+@code {
+    int currentYear = DateTime.Now.Year;
+}
+ *@
+
+@namespace TotalCareEngineering.Components
+
+<footer class="tc-footer">
+    <div class="tc-footer__inner">
+        <div class="tc-footer__brand">TOTALCARE ENGINEERING SERVICES (PVT) LTD.</div>
+        <div class="tc-footer__tagline">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                 width="18" height="18" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2L2 7l10 5 10-5-10-5z" />
+                <path d="M2 17l10 5 10-5" />
+                <path d="M2 12l10 5 10-5" />
+            </svg>
+            One Roof. All Engineering Solutions. Coming Soon!
+        </div>
+        <div class="tc-footer__copy">
+            &copy; @currentYear TotalCare Engineering Services (Pvt) Ltd. All rights reserved.
+        </div>
+    </div>
+</footer>
+
+<style>
+    .tc-footer {
+        background: linear-gradient(135deg, var(--tc-orange) 0%, var(--tc-orange-d) 100%);
+        padding: clamp(1.75rem, 4vw, 3rem) clamp(1.25rem, 4vw, 3rem);
+        position: relative;
+        overflow: hidden;
+    }
+
+        .tc-footer::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            pointer-events: none;
+            background: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23fff' fill-opacity='0.05'%3E%3Cpath d='M0 0h20v20H0zM20 20h20v20H20z'/%3E%3C/g%3E%3C/svg%3E");
+        }
+
+    .tc-footer__inner {
+        position: relative;
+        z-index: 2;
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+        text-align: center;
+    }
+
+    .tc-footer__brand {
+        font-family: 'Bebas Neue', 'Barlow', sans-serif;
+        font-size: clamp(1rem, 3vw, 1.8rem);
+        letter-spacing: 0.06em;
+        color: var(--tc-coal);
+        line-height: 1.1;
+    }
+
+    .tc-footer__tagline {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        font-size: clamp(0.75rem, 1.5vw, 0.92rem);
+        font-weight: 400;
+        color: rgba(15,10,5,0.72);
+    }
+
+    .tc-footer__copy {
+        font-size: clamp(0.65rem, 1.2vw, 0.78rem);
+        color: rgba(15,10,5,0.50);
+        margin-top: 0.25rem;
+    }
+</style>
+
+@code {
+    private int currentYear = DateTime.Now.Year;
+}

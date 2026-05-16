@@ -1,0 +1,148 @@
+﻿@namespace TotalCareEngineering.Components
+
+<nav class="tc-nav @(isScrolled ? "tc-nav--scrolled" : "")">
+    <div class="tc-nav__inner">
+
+        <!-- Logo — always left -->
+        <div class="tc-nav__brand">
+            <img src="images/TotalCare.png" alt="TotalCare Logo" class="tc-nav__logo" />
+            <span class="tc-nav__brand-text">TOTALCARE ENGINEERING SERVICES</span>
+        </div>
+
+        <!-- Desktop links -->
+        <div class="tc-nav__links">
+            <a href="#about-us" class="tc-nav__link">About</a>
+           @*  <a href="/team" class="tc-nav__link">Team</a> *@
+            <a href="/contact" class="tc-nav__link tc-nav__link--cta">Contact</a>
+        </div>
+
+        <!-- Mobile hamburger — right side -->
+        <button @onclick="ToggleMobileMenu" class="tc-nav__hamburger @(showMobileMenu ? "open" : "")" aria-label="Toggle menu">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+
+    <!-- Mobile dropdown -->
+    @if (showMobileMenu)
+    {
+        <div class="tc-nav__mobile">
+            <a href="#about-us" @onclick="ToggleMobileMenu" class="tc-nav__mobile-link">About</a>
+            <a href="/team" @onclick="ToggleMobileMenu" class="tc-nav__mobile-link">Team</a>
+            <a href="/contact" @onclick="ToggleMobileMenu" class="tc-nav__mobile-link">Contact</a>
+        </div>
+    }
+</nav>
+
+
+<style>
+     /* ── NAV ── */
+    .tc-nav {
+        position: fixed; top: 0; left: 0; right: 0; z-index: 200;
+        background: rgba(255,255,255,0.92);
+        backdrop-filter: blur(14px) saturate(1.5);
+        border-bottom: 1px solid rgba(236,124,38,0.10);
+        transition: background var(--tc-transition), box-shadow var(--tc-transition), border-color var(--tc-transition);
+    }
+    .tc-nav--scrolled {
+        background: rgba(255,255,255,0.97);
+        box-shadow: 0 2px 20px rgba(236,124,38,0.10);
+        border-color: rgba(236,124,38,0.2);
+    }
+    .tc-nav__inner {
+        max-width: 1280px; margin: 0 auto;
+        padding: 0 clamp(1rem, 3vw, 2rem);
+        height: 68px;
+        display: flex; align-items: center; justify-content: space-between; gap: 1rem;
+    }
+    /* brand — always left */
+    .tc-nav__brand {
+        display: flex; align-items: center; gap: 8px;
+        flex: 1; justify-content: flex-start; min-width: 0;
+    }
+    .tc-nav__brand-dot {
+        width: 8px; height: 8px; flex-shrink: 0;
+        background: var(--tc-orange);
+        border-radius: 50%;
+        box-shadow: 0 0 10px var(--tc-orange);
+        animation: tc-pulse 2s ease-in-out infinite;
+    }
+    @@keyframes tc-pulse {
+        0%,100% { transform: scale(1); opacity: 1; }
+        50% { transform: scale(1.6); opacity: 0.6; }
+    }
+    .tc-nav__brand-text {
+        font-family: 'Bebas Neue', 'Barlow', sans-serif;
+        font-size: clamp(0.75rem, 2vw, 1.15rem);
+        letter-spacing: 0.06em;
+        color: var(--tc-coal);
+        line-height: 1;
+    }
+    .tc-nav__logo {
+        height: clamp(40px, 7vw, 62px);
+        width: auto; object-fit: contain;
+        flex-shrink: 0;
+    }
+    /* desktop links */
+    .tc-nav__links {
+        display: flex; align-items: center; gap: 0.5rem;
+        flex-shrink: 0;
+    }
+    .tc-nav__link {
+        font-size: 0.82rem; font-weight: 600;
+        letter-spacing: 0.08em; text-transform: uppercase;
+        color: var(--tc-coal);
+        text-decoration: none;
+        padding: 0.45rem 1rem;
+        border-radius: 50px;
+        transition: color var(--tc-transition), background var(--tc-transition);
+    }
+    .tc-nav__link:hover { color: var(--tc-orange); background: rgba(236,124,38,0.08); }
+    .tc-nav__link--cta {
+        background: var(--tc-orange);
+        color: #fff !important;
+        padding: 0.45rem 1.4rem;
+    }
+    .tc-nav__link--cta:hover { background: var(--tc-orange-d); box-shadow: 0 0 18px rgba(236,124,38,0.35); }
+    /* hamburger */
+    .tc-nav__hamburger {
+        display: none; flex-direction: column; gap: 5px;
+        background: none; border: none; cursor: pointer; padding: 6px; flex-shrink: 0;
+    }
+    .tc-nav__hamburger span {
+        display: block; width: 24px; height: 2px;
+        background: var(--tc-orange); border-radius: 2px;
+        transition: 0.3s ease;
+    }
+    .tc-nav__hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+    .tc-nav__hamburger.open span:nth-child(2) { opacity: 0; }
+    .tc-nav__hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+    .tc-nav__spacer { display: none; }
+    /* mobile menu */
+    .tc-nav__mobile {
+        background: rgba(255,255,255,0.98);
+        border-top: 1px solid rgba(236,124,38,0.12);
+        padding: 0.75rem 1.5rem 1rem;
+        display: flex; flex-direction: column; gap: 0;
+    }
+    .tc-nav__mobile-link {
+        display: block;
+        font-size: 1rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase;
+        color: var(--tc-coal); text-decoration: none;
+        padding: 0.7rem 0;
+        border-bottom: 1px solid rgba(236,124,38,0.08);
+        transition: color var(--tc-transition);
+    }
+    .tc-nav__mobile-link:hover { color: var(--tc-orange); }
+
+
+</style>
+
+@code {
+    private bool showMobileMenu = false;
+    private bool isScrolled = false;
+
+    private void ToggleMobileMenu()
+    {
+        showMobileMenu = !showMobileMenu;
+    }
+}

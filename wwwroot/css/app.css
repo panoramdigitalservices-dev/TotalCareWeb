@@ -1,6 +1,40 @@
+:root {
+    --tc-orange: #EC7C26;
+    --tc-orange-d: #C9621A;
+    --tc-orange-l: #FF9F55;
+    --tc-amber: #F5A623;
+    --tc-coal: #0F0A05;
+    --tc-dark: #1A1008;
+    --tc-card-bg: #FFFFFF;
+    --tc-text: #1a1a1a;
+    --tc-muted: #6B7280;
+    --tc-border: rgba(236,124,38,0.18);
+    --tc-radius: 14px;
+    --tc-shadow: 0 4px 24px rgba(236,124,38,0.10);
+    --tc-transition: 220ms ease;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Barlow', 'Inter', sans-serif;
+    background: #f8f5f0;
+    color: var(--tc-text);
+    overflow-x: hidden;
+}
+
+/*
 html, body {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-}
+}*/
 
 h1:focus {
     outline: none;
