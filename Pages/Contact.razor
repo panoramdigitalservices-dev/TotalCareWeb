@@ -88,137 +88,84 @@
 <style>
     /* ── CONTACT ── */
     .tc-contact {
-        background: #f8f5f0;
-        padding: clamp(3rem, 7vw, 7rem) clamp(1.25rem, 4vw, 3rem);
+    background: #f8f5f0;
+    padding: clamp(3rem, 7vw, 7rem) clamp(1.25rem, 4vw, 3rem);
     }
 
-    .tc-contact__inner {
-        max-width: 1200px;
-        margin: 0 auto;
-    }
-
+    .tc-contact__inner { max-width: 1200px; margin: 0 auto; }
     .tc-contact__grid {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: clamp(2rem, 5vw, 5rem);
-        margin-top: clamp(1.5rem, 3vw, 2.5rem);
+    display: grid; grid-template-columns: 1fr 1fr;
+    gap: clamp(2rem, 5vw, 5rem);
+    margin-top: clamp(1.5rem, 3vw, 2.5rem);
     }
 
     .tc-contact__heading {
-        font-family: 'Bebas Neue', 'Barlow', sans-serif;
-        font-size: clamp(1.3rem, 2.5vw, 1.9rem);
-        letter-spacing: 0.04em;
-        color: var(--tc-coal);
-        margin-bottom: clamp(1rem, 2vw, 1.5rem);
-        text-transform: capitalize;
+    font-family: 'Bebas Neue', 'Barlow', sans-serif;
+    font-size: clamp(1.3rem, 2.5vw, 1.9rem);
+    letter-spacing: 0.04em; color: var(--tc-coal);
+    margin-bottom: clamp(1rem, 2vw, 1.5rem);
+    text-transform: capitalize;
     }
 
     /* info cards */
     .tc-info-card {
-        display: flex;
-        align-items: flex-start;
-        gap: 0.9rem;
-        background: #fff;
-        border: 1px solid rgba(236,124,38,0.12);
-        border-radius: var(--tc-radius);
-        padding: clamp(0.9rem, 2vw, 1.25rem);
-        box-shadow: 0 4px 18px rgba(0,0,0,0.07);
-        margin-bottom: 1rem;
-        transition: border-color var(--tc-transition), box-shadow var(--tc-transition);
+    display: flex; align-items: flex-start; gap: 0.9rem;
+    background: #fff;
+    border: 1px solid rgba(236,124,38,0.12);
+    border-radius: var(--tc-radius);
+    padding: clamp(0.9rem, 2vw, 1.25rem);
+    box-shadow: 0 4px 18px rgba(0,0,0,0.07);
+    margin-bottom: 1rem;
+    transition: border-color var(--tc-transition), box-shadow var(--tc-transition);
     }
 
-        .tc-info-card:hover {
-            border-color: rgba(236,124,38,0.30);
-            box-shadow: 0 6px 24px rgba(236,124,38,0.10);
-        }
-
+    .tc-info-card:hover { border-color: rgba(236,124,38,0.30); box-shadow: 0 6px 24px rgba(236,124,38,0.10); }
     .tc-info-card__icon {
-        width: 40px;
-        height: 40px;
-        flex-shrink: 0;
-        background: rgba(236,124,38,0.10);
-        border: 1px solid rgba(236,124,38,0.20);
-        border-radius: 10px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: var(--tc-orange);
-        margin-top: 2px;
+    width: 40px; height: 40px; flex-shrink: 0;
+    background: rgba(236,124,38,0.10);
+    border: 1px solid rgba(236,124,38,0.20);
+    border-radius: 10px;
+    display: flex; align-items: center; justify-content: center;
+    color: var(--tc-orange);
+    margin-top: 2px;
     }
 
     .tc-info-card__name {
-        font-size: clamp(0.85rem, 1.5vw, 1rem);
-        font-weight: 600;
-        color: #111827;
-        text-transform: capitalize;
-        margin-bottom: 0.2rem;
+    font-size: clamp(0.85rem, 1.5vw, 1rem); font-weight: 600;
+    color: #111827; text-transform: capitalize; margin-bottom: 0.2rem;
     }
 
     .tc-info-card__detail {
-        font-size: clamp(0.8rem, 1.3vw, 0.92rem);
-        color: #374151;
-        line-height: 1.6;
+    font-size: clamp(0.8rem, 1.3vw, 0.92rem); color: #374151; line-height: 1.6;
     }
 
-    .tc-break-all {
-        word-break: break-all;
-    }
+    .tc-break-all { word-break: break-all; }
 
     /* contact socials */
-    .tc-contact__social-wrap {
-        margin-top: 0.5rem;
-    }
-
+    .tc-contact__social-wrap { margin-top: 0.5rem; }
     .tc-contact__social-label {
-        font-size: clamp(0.78rem, 1.3vw, 0.9rem);
-        color: #374151;
-        text-transform: capitalize;
-        margin-bottom: 0.75rem;
+    font-size: clamp(0.78rem, 1.3vw, 0.9rem); color: #374151;
+    text-transform: capitalize; margin-bottom: 0.75rem;
     }
 
-    .tc-contact__socials {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 0.5rem;
-    }
-
+    .tc-contact__socials { display: flex; flex-wrap: wrap; gap: 0.5rem; }
     .tc-contact-social {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: clamp(38px, 5vw, 44px);
-        height: clamp(38px, 5vw, 44px);
-        background: var(--tc-orange);
-        border-radius: 10px;
-        color: #fff;
-        text-decoration: none;
-        transition: background var(--tc-transition), transform var(--tc-transition), box-shadow var(--tc-transition);
+    display: flex; align-items: center; justify-content: center;
+    width: clamp(38px, 5vw, 44px); height: clamp(38px, 5vw, 44px);
+    background: var(--tc-orange);
+    border-radius: 10px; color: #fff; text-decoration: none;
+    transition: background var(--tc-transition), transform var(--tc-transition), box-shadow var(--tc-transition);
     }
 
-        .tc-contact-social:hover {
-            background: var(--tc-orange-d);
-            transform: translateY(-3px) scale(1.08);
-            box-shadow: 0 6px 20px rgba(236,124,38,0.35);
-        }
+    .tc-contact-social:hover { background: var(--tc-orange-d); transform: translateY(-3px) scale(1.08); box-shadow: 0 6px 20px rgba(236,124,38,0.35); }
 
     .tc-section-label {
-        display: inline-flex;
-        align-items: center;
-        gap: 8px;
-        font-size: 0.7rem;
-        font-weight: 700;
-        letter-spacing: 0.22em;
-        text-transform: uppercase;
-        color: var(--tc-orange);
+        display: inline-flex; align-items: center; gap: 8px;
+        font-size: 0.7rem; font-weight: 700; letter-spacing: 0.22em;
+        text-transform: uppercase; color: var(--tc-orange);
         margin-bottom: 0.75rem;
     }
-
-        .tc-section-label::before {
-            content: '';
-            width: 24px;
-            height: 1.5px;
-            background: var(--tc-orange);
-        }
+    .tc-section-label::before { content: ''; width: 24px; height: 1.5px; background: var(--tc-orange); }
 </style>
 
 <!-- ═══════════════════════════════════════ FOOTER ═══════════════════════════════════════ -->
