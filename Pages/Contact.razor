@@ -1,174 +1,486 @@
 ﻿@page "/contact"
+@using TotalCareEngineering.Components
 
 <PageTitle>TotalCare Engineering Services - Contact</PageTitle>
 
 <AppNavbar />
 
-<!-- ═══════════════════════════════════════ CONTACT ═══════════════════════════════════════ -->
+<!-- ═══════════════════════════════════════ CONTACT HERO STRIP ═══════════════════════════════════════ -->
+<div class="tc-page-hero">
+    <div class="tc-page-hero__bg"></div>
+    <div class="tc-page-hero__content">
+        <div class="tc-section-label">Contact Us</div>
+        <h1 class="tc-page-hero__title">Get In Touch</h1>
+        <p class="tc-page-hero__sub">We're here to help. Reach out through any channel below.</p>
+    </div>
+</div>
+
+<!-- ═══════════════════════════════════════ CONTACT BODY ═══════════════════════════════════════ -->
 <section id="contact-us" class="tc-contact">
     <div class="tc-contact__inner">
-        <div class="tc-section-label">Contact</div>
 
         <div class="tc-contact__grid">
-            <!-- Visit Our Store -->
-            <div class="tc-contact__col">
-                <h2 class="tc-contact__heading">Visit Our Store</h2>
 
-                <div class="tc-info-card">
-                    <div class="tc-info-card__icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="20" height="20">
+            <!-- ── Left Column: Visit & Follow ── -->
+            <div class="tc-contact__col">
+
+                <!-- Visit card -->
+                <div class="tc-contact__card-group">
+                    <h2 class="tc-contact__heading">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="22" height="22">
                             <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
                             <circle cx="12" cy="10" r="3" />
                         </svg>
+                        Visit Our Store
+                    </h2>
+
+                    <div class="tc-info-card">
+                        <div class="tc-info-card__icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="20" height="20">
+                                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+                                <polyline points="9 22 9 12 15 12 15 22" />
+                            </svg>
+                        </div>
+                        <div class="tc-info-card__body">
+                            <div class="tc-info-card__name">Head Office</div>
+                            <div class="tc-info-card__detail">TotalCare Engineering Services (Pvt) Ltd.</div>
+                            <div class="tc-info-card__detail tc-info-card__detail--muted">Colombo, Sri Lanka</div>
+                        </div>
                     </div>
-                    <div class="tc-info-card__body">
-                        <div class="tc-info-card__name">TotalCare Engineering Services (Pvt) Ltd.</div>
-                        <div class="tc-info-card__detail">Colombo, Sri Lanka</div>
+
+                    <!-- Business Hours -->
+                    <div class="tc-info-card">
+                        <div class="tc-info-card__icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="20" height="20">
+                                <circle cx="12" cy="12" r="10" />
+                                <polyline points="12 6 12 12 16 14" />
+                            </svg>
+                        </div>
+                        <div class="tc-info-card__body">
+                            <div class="tc-info-card__name">Business Hours</div>
+                            <div class="tc-info-card__detail">Mon – Fri: 8:00 AM – 6:00 PM</div>
+                            <div class="tc-info-card__detail tc-info-card__detail--muted">Sat: 8:00 AM – 2:00 PM</div>
+                        </div>
                     </div>
                 </div>
 
                 <!-- Social Media -->
                 <div class="tc-contact__social-wrap">
-                    <div class="tc-contact__social-label">Follow us on social media</div>
+                    <div class="tc-contact__social-label">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="16" height="16">
+                            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+                        </svg>
+                        Follow us on social media
+                    </div>
                     <div class="tc-contact__socials">
-                        <a aria-label="Facebook" target="_blank" href="https://www.facebook.com/share/12L2oSJptNF/" class="tc-contact-social">
+                        <a aria-label="Facebook" target="_blank" href="https://www.facebook.com/share/12L2oSJptNF/" class="tc-contact-social tc-contact-social--fb">
                             <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" /></svg>
+                            <span>Facebook</span>
                         </a>
-                        <a aria-label="WhatsApp" target="_blank" href="https://wa.me/94776171864" class="tc-contact-social">
+                        <a aria-label="WhatsApp" target="_blank" href="https://wa.me/94776171864" class="tc-contact-social tc-contact-social--wa">
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" /></svg>
+                            <span>WhatsApp</span>
                         </a>
-                        <a aria-label="Instagram" target="_blank" href="https://www.instagram.com/totalcare_engineering_services?igsh=cnNwb2tzNXp4aTg1" class="tc-contact-social">
+                        <a aria-label="Instagram" target="_blank" href="https://www.instagram.com/totalcare_engineering_services?igsh=cnNwb2tzNXp4aTg1" class="tc-contact-social tc-contact-social--ig">
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><rect x="2" y="2" width="20" height="20" rx="5" ry="5" /><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" /><line x1="17.5" y1="6.5" x2="17.51" y2="6.5" /></svg>
+                            <span>Instagram</span>
                         </a>
-                        <a aria-label="LinkedIn" target="_blank" href="https://www.linkedin.com/company/total-care-engineering-services/" class="tc-contact-social">
+                        <a aria-label="LinkedIn" target="_blank" href="https://www.linkedin.com/company/total-care-engineering-services/" class="tc-contact-social tc-contact-social--li">
                             <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" /><rect x="2" y="9" width="4" height="12" /><circle cx="4" cy="4" r="2" /></svg>
+                            <span>LinkedIn</span>
                         </a>
-                        <a aria-label="Email" target="_blank" href="mailto:totalcareengineeringservices@gmail.com" class="tc-contact-social">
+                        <a aria-label="Email" href="mailto:totalcareengineeringservices@gmail.com" class="tc-contact-social tc-contact-social--em">
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" /><polyline points="22,6 12,13 2,6" /></svg>
+                            <span>Email Us</span>
                         </a>
                     </div>
                 </div>
             </div>
 
-            <!-- Get in Touch -->
+            <!-- ── Right Column: Get in Touch ── -->
             <div class="tc-contact__col">
-                <h2 class="tc-contact__heading">Get in Touch</h2>
-
-                <!-- Hotline -->
-                <div class="tc-info-card">
-                    <div class="tc-info-card__icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="20" height="20">
+                <div class="tc-contact__card-group">
+                    <h2 class="tc-contact__heading">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="22" height="22">
                             <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
                         </svg>
-                    </div>
-                    <div class="tc-info-card__body">
-                        <div class="tc-info-card__name">Hotline</div>
-                        <div class="tc-info-card__detail">+94 77 617 1864 | +94 76 821 5954 | +94 71 715 4406</div>
-                    </div>
-                </div>
+                        Get in Touch
+                    </h2>
 
-                <!-- Email -->
-                <div class="tc-info-card">
-                    <div class="tc-info-card__icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="20" height="20">
-                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
-                            <polyline points="22,6 12,13 2,6" />
-                        </svg>
+                    <!-- Hotline -->
+                    <div class="tc-info-card tc-info-card--clickable">
+                        <div class="tc-info-card__icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="20" height="20">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                            </svg>
+                        </div>
+                        <div class="tc-info-card__body">
+                            <div class="tc-info-card__name">Hotline</div>
+                            <a href="tel:+94776171864" class="tc-info-card__detail tc-info-card__link">+94 77 617 1864</a>
+                            <a href="tel:+94768215954" class="tc-info-card__detail tc-info-card__link">+94 76 821 5954</a>
+                            <a href="tel:+94717154406" class="tc-info-card__detail tc-info-card__link">+94 71 715 4406</a>
+                        </div>
                     </div>
-                    <div class="tc-info-card__body">
-                        <div class="tc-info-card__name">Email</div>
-                        <div class="tc-info-card__detail tc-break-all">totalcareengineeringservices@@gmail.com</div>
+
+                    <!-- Email -->
+                    <div class="tc-info-card tc-info-card--clickable">
+                        <div class="tc-info-card__icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="20" height="20">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                                <polyline points="22,6 12,13 2,6" />
+                            </svg>
+                        </div>
+                        <div class="tc-info-card__body">
+                            <div class="tc-info-card__name">Email</div>
+                            <a href="mailto:totalcareengineeringservices@gmail.com" class="tc-info-card__detail tc-info-card__link tc-break-all">
+                                totalcareengineeringservices@@gmail.com
+                            </a>
+                        </div>
                     </div>
+
+                    <!-- WhatsApp CTA -->
+                    <a href="https://wa.me/94776171864" target="_blank" class="tc-whatsapp-cta">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" /></svg>
+                        Chat with us on WhatsApp
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
+                    </a>
                 </div>
             </div>
+
         </div>
     </div>
 </section>
 
-<style>
-    /* ── CONTACT ── */
-    .tc-contact {
-    background: #f8f5f0;
-    padding: clamp(3rem, 7vw, 7rem) clamp(1.25rem, 4vw, 3rem);
-    }
-
-    .tc-contact__inner { max-width: 1200px; margin: 0 auto; }
-    .tc-contact__grid {
-    display: grid; grid-template-columns: 1fr 1fr;
-    gap: clamp(2rem, 5vw, 5rem);
-    margin-top: clamp(1.5rem, 3vw, 2.5rem);
-    }
-
-    .tc-contact__heading {
-    font-family: 'Bebas Neue', 'Barlow', sans-serif;
-    font-size: clamp(1.3rem, 2.5vw, 1.9rem);
-    letter-spacing: 0.04em; color: var(--tc-coal);
-    margin-bottom: clamp(1rem, 2vw, 1.5rem);
-    text-transform: capitalize;
-    }
-
-    /* info cards */
-    .tc-info-card {
-    display: flex; align-items: flex-start; gap: 0.9rem;
-    background: #fff;
-    border: 1px solid rgba(236,124,38,0.12);
-    border-radius: var(--tc-radius);
-    padding: clamp(0.9rem, 2vw, 1.25rem);
-    box-shadow: 0 4px 18px rgba(0,0,0,0.07);
-    margin-bottom: 1rem;
-    transition: border-color var(--tc-transition), box-shadow var(--tc-transition);
-    }
-
-    .tc-info-card:hover { border-color: rgba(236,124,38,0.30); box-shadow: 0 6px 24px rgba(236,124,38,0.10); }
-    .tc-info-card__icon {
-    width: 40px; height: 40px; flex-shrink: 0;
-    background: rgba(236,124,38,0.10);
-    border: 1px solid rgba(236,124,38,0.20);
-    border-radius: 10px;
-    display: flex; align-items: center; justify-content: center;
-    color: var(--tc-orange);
-    margin-top: 2px;
-    }
-
-    .tc-info-card__name {
-    font-size: clamp(0.85rem, 1.5vw, 1rem); font-weight: 600;
-    color: #111827; text-transform: capitalize; margin-bottom: 0.2rem;
-    }
-
-    .tc-info-card__detail {
-    font-size: clamp(0.8rem, 1.3vw, 0.92rem); color: #374151; line-height: 1.6;
-    }
-
-    .tc-break-all { word-break: break-all; }
-
-    /* contact socials */
-    .tc-contact__social-wrap { margin-top: 0.5rem; }
-    .tc-contact__social-label {
-    font-size: clamp(0.78rem, 1.3vw, 0.9rem); color: #374151;
-    text-transform: capitalize; margin-bottom: 0.75rem;
-    }
-
-    .tc-contact__socials { display: flex; flex-wrap: wrap; gap: 0.5rem; }
-    .tc-contact-social {
-    display: flex; align-items: center; justify-content: center;
-    width: clamp(38px, 5vw, 44px); height: clamp(38px, 5vw, 44px);
-    background: var(--tc-orange);
-    border-radius: 10px; color: #fff; text-decoration: none;
-    transition: background var(--tc-transition), transform var(--tc-transition), box-shadow var(--tc-transition);
-    }
-
-    .tc-contact-social:hover { background: var(--tc-orange-d); transform: translateY(-3px) scale(1.08); box-shadow: 0 6px 20px rgba(236,124,38,0.35); }
-
-    .tc-section-label {
-        display: inline-flex; align-items: center; gap: 8px;
-        font-size: 0.7rem; font-weight: 700; letter-spacing: 0.22em;
-        text-transform: uppercase; color: var(--tc-orange);
-        margin-bottom: 0.75rem;
-    }
-    .tc-section-label::before { content: ''; width: 24px; height: 1.5px; background: var(--tc-orange); }
-</style>
-
 <!-- ═══════════════════════════════════════ FOOTER ═══════════════════════════════════════ -->
 <AppFooter />
 
+<style>
+    /* ── Shared Variables (mirrors home page) ── */
+    :root {
+        --tc-orange: #EC7C26;
+        --tc-orange-d: #C9621A;
+        --tc-coal: #0F0A05;
+        --tc-card-bg: #FFFFFF;
+        --tc-text: #1a1a1a;
+        --tc-muted: #6B7280;
+        --tc-radius: 14px;
+        --tc-shadow: 0 4px 24px rgba(236,124,38,0.10);
+        --tc-transition: 220ms ease;
+    }
 
+    *, *::before, *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        font-family: 'Barlow', 'Inter', sans-serif;
+        background: #f8f5f0;
+        color: var(--tc-text);
+        overflow-x: hidden;
+    }
+
+    /* ── PAGE HERO STRIP ── */
+    .tc-page-hero {
+        position: relative;
+        padding: clamp(5rem, 12vw, 9rem) clamp(1.25rem, 4vw, 3rem) clamp(2.5rem, 5vw, 4rem);
+        overflow: hidden;
+        display: flex;
+        align-items: flex-end;
+        min-height: clamp(200px, 30vw, 320px);
+    }
+
+    .tc-page-hero__bg {
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(135deg, var(--tc-coal) 0%, #2C1A08 55%, #1a0d00 100%);
+    }
+
+        .tc-page-hero__bg::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background-image: radial-gradient(circle, rgba(236,124,38,0.08) 1px, transparent 1px);
+            background-size: 40px 40px;
+        }
+
+    .tc-page-hero__content {
+        position: relative;
+        z-index: 2;
+        max-width: 1200px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .tc-page-hero__title {
+        font-family: 'Bebas Neue', 'Barlow', sans-serif;
+        font-size: clamp(2.5rem, 7vw, 5.5rem);
+        letter-spacing: 0.03em;
+        color: #fff;
+        line-height: 0.95;
+        margin-bottom: 0.6rem;
+    }
+
+    .tc-page-hero__sub {
+        font-size: clamp(0.85rem, 1.5vw, 1rem);
+        font-weight: 300;
+        color: rgba(255,255,255,0.55);
+        max-width: 440px;
+    }
+
+    /* shared section label */
+    .tc-section-label {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        font-size: 0.7rem;
+        font-weight: 700;
+        letter-spacing: 0.22em;
+        text-transform: uppercase;
+        color: var(--tc-orange);
+        margin-bottom: 0.75rem;
+    }
+
+        .tc-section-label::before {
+            content: '';
+            width: 24px;
+            height: 1.5px;
+            background: var(--tc-orange);
+        }
+
+    /* ── CONTACT SECTION ── */
+    .tc-contact {
+        background: #f8f5f0;
+        padding: clamp(2.5rem, 6vw, 5rem) clamp(1.25rem, 4vw, 3rem) clamp(3rem, 7vw, 6rem);
+    }
+
+    .tc-contact__inner {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .tc-contact__grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: clamp(2rem, 5vw, 5rem);
+    }
+
+    /* card group */
+    .tc-contact__card-group {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    /* heading with icon */
+    .tc-contact__heading {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-family: 'Bebas Neue', 'Barlow', sans-serif;
+        font-size: clamp(1.3rem, 2.5vw, 1.8rem);
+        letter-spacing: 0.04em;
+        color: var(--tc-coal);
+        margin-bottom: 0.25rem;
+        text-transform: capitalize;
+    }
+
+        .tc-contact__heading svg {
+            color: var(--tc-orange);
+            flex-shrink: 0;
+        }
+
+    /* info cards */
+    .tc-info-card {
+        display: flex;
+        align-items: flex-start;
+        gap: 0.9rem;
+        background: #fff;
+        border: 1px solid rgba(236,124,38,0.12);
+        border-radius: var(--tc-radius);
+        padding: clamp(0.9rem, 2vw, 1.25rem);
+        box-shadow: 0 4px 18px rgba(0,0,0,0.06);
+        transition: border-color var(--tc-transition), box-shadow var(--tc-transition), transform var(--tc-transition);
+    }
+
+    .tc-info-card--clickable:hover {
+        border-color: rgba(236,124,38,0.30);
+        box-shadow: 0 8px 28px rgba(236,124,38,0.12);
+        transform: translateY(-2px);
+    }
+
+    .tc-info-card__icon {
+        width: 42px;
+        height: 42px;
+        flex-shrink: 0;
+        background: rgba(236,124,38,0.10);
+        border: 1px solid rgba(236,124,38,0.20);
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--tc-orange);
+        margin-top: 2px;
+    }
+
+    .tc-info-card__body {
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+        flex: 1;
+        min-width: 0;
+    }
+
+    .tc-info-card__name {
+        font-size: clamp(0.82rem, 1.4vw, 0.95rem);
+        font-weight: 700;
+        color: #111827;
+        text-transform: capitalize;
+        margin-bottom: 4px;
+    }
+
+    .tc-info-card__detail {
+        font-size: clamp(0.78rem, 1.3vw, 0.9rem);
+        color: #374151;
+        line-height: 1.65;
+    }
+
+    .tc-info-card__detail--muted {
+        color: var(--tc-muted);
+        font-size: clamp(0.72rem, 1.2vw, 0.82rem);
+    }
+
+    .tc-info-card__link {
+        text-decoration: none;
+        color: var(--tc-orange);
+        font-weight: 500;
+        transition: color var(--tc-transition);
+        display: block;
+    }
+
+        .tc-info-card__link:hover {
+            color: var(--tc-orange-d);
+            text-decoration: underline;
+        }
+
+    .tc-break-all {
+        word-break: break-all;
+    }
+
+    /* WhatsApp CTA button */
+    .tc-whatsapp-cta {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        background: linear-gradient(135deg, #25D366, #128C7E);
+        color: #fff;
+        text-decoration: none;
+        padding: 1rem 1.5rem;
+        border-radius: var(--tc-radius);
+        font-size: clamp(0.82rem, 1.4vw, 0.95rem);
+        font-weight: 600;
+        letter-spacing: 0.03em;
+        transition: transform var(--tc-transition), box-shadow var(--tc-transition);
+        box-shadow: 0 4px 18px rgba(37,211,102,0.25);
+        margin-top: 0.5rem;
+    }
+
+        .tc-whatsapp-cta:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 28px rgba(37,211,102,0.35);
+        }
+
+    /* social media buttons */
+    .tc-contact__social-wrap {
+        margin-top: 1.5rem;
+    }
+
+    .tc-contact__social-label {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        font-size: clamp(0.75rem, 1.3vw, 0.88rem);
+        font-weight: 600;
+        color: var(--tc-coal);
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        margin-bottom: 1rem;
+    }
+
+        .tc-contact__social-label svg {
+            color: var(--tc-orange);
+        }
+
+    .tc-contact__socials {
+        display: flex;
+        flex-direction: column;
+        gap: 0.6rem;
+    }
+
+    .tc-contact-social {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        padding: 0.75rem 1.1rem;
+        border-radius: 10px;
+        color: #fff;
+        text-decoration: none;
+        font-size: clamp(0.78rem, 1.3vw, 0.9rem);
+        font-weight: 600;
+        letter-spacing: 0.03em;
+        transition: transform var(--tc-transition), box-shadow var(--tc-transition), filter var(--tc-transition);
+    }
+
+        .tc-contact-social:hover {
+            transform: translateX(6px);
+            filter: brightness(1.1);
+        }
+
+    .tc-contact-social--fb {
+        background: #1877F2;
+    }
+
+    .tc-contact-social--wa {
+        background: #25D366;
+    }
+
+    .tc-contact-social--ig {
+        background: linear-gradient(135deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+    }
+
+    .tc-contact-social--li {
+        background: #0077B5;
+    }
+
+    .tc-contact-social--em {
+        background: var(--tc-orange);
+    }
+
+    /* ── RESPONSIVE ── */
+    @@media (max-width: 767px) {
+        .tc-contact__grid {
+            grid-template-columns: 1fr;
+            gap: 2rem;
+        }
+
+        .tc-contact__heading {
+            font-size: 1.35rem;
+        }
+
+        .tc-contact-social span {
+            display: inline;
+        }
+    }
+
+    @@media (max-width: 480px) {
+        .tc-page-hero {
+            min-height: 180px;
+        }
+
+        .tc-contact-social {
+            padding: 0.7rem 1rem;
+        }
+    }
+</style>

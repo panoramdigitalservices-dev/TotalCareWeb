@@ -1,167 +1,372 @@
 ﻿@page "/team"
+@using TotalCareEngineering.Components
 
 <PageTitle>TotalCare Engineering Services - Team</PageTitle>
 
 <AppNavbar />
 
-<section class="tc-partners">
-    <div class="tc-section-label">Our Team</div>
-    <p class="tc-partners__sub">Team build the power</p>
+<!-- ═══════════════════════════════════════ TEAM HERO STRIP ═══════════════════════════════════════ -->
+<div class="tc-page-hero">
+    <div class="tc-page-hero__bg"></div>
+    <div class="tc-page-hero__content">
+        <div class="tc-section-label">Our People</div>
+        <h1 class="tc-page-hero__title">Meet The Team</h1>
+        <p class="tc-page-hero__sub">The skilled professionals powering TotalCare Engineering Services.</p>
+    </div>
+</div>
 
-    <div class="tc-partners__grid">
-        <div class="tc-partner-card">
+<!-- ═══════════════════════════════════════ TEAM SECTION ═══════════════════════════════════════ -->
+<section class="tc-team">
+    <div class="tc-team__inner">
 
-            <div class="tc-partner-card__divider"></div>
-            <div class="tc-partner-card__name">Team Member 1</div>
-            <div class="tc-partner-card__type">des1</div>
-        </div>
-        <div class="tc-partner-card">
+        <div class="tc-team__grid">
 
-            <div class="tc-partner-card__divider"></div>
-            <div class="tc-partner-card__name">Team Member 2</div>
-            <div class="tc-partner-card__type">des2</div>
-        </div>
-        <div class="tc-partner-card">
+            <div class="tc-team-card">
+                <div class="tc-team-card__avatar">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="40" height="40">
+                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                        <circle cx="12" cy="7" r="4" />
+                    </svg>
+                </div>
+                <div class="tc-team-card__accent"></div>
+                <div class="tc-team-card__body">
+                    <div class="tc-team-card__name">Team Member 1</div>
+                    <div class="tc-team-card__role">des1</div>
+                    <div class="tc-team-card__divider"></div>
+                    <div class="tc-team-card__socials">
+                        <a href="#" aria-label="LinkedIn" class="tc-team-social">
+                            <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" /><rect x="2" y="9" width="4" height="12" /><circle cx="4" cy="4" r="2" /></svg>
+                        </a>
+                        <a href="#" aria-label="Email" class="tc-team-social">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" /><polyline points="22,6 12,13 2,6" /></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
 
-            <div class="tc-partner-card__divider"></div>
-            <div class="tc-partner-card__name">Team Member 3</div>
-            <div class="tc-partner-card__type">des3</div>
-        </div>
-        <div class="tc-partner-card">
+            <div class="tc-team-card">
+                <div class="tc-team-card__avatar">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="40" height="40">
+                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                        <circle cx="12" cy="7" r="4" />
+                    </svg>
+                </div>
+                <div class="tc-team-card__accent"></div>
+                <div class="tc-team-card__body">
+                    <div class="tc-team-card__name">Team Member 2</div>
+                    <div class="tc-team-card__role">des2</div>
+                    <div class="tc-team-card__divider"></div>
+                    <div class="tc-team-card__socials">
+                        <a href="#" aria-label="LinkedIn" class="tc-team-social">
+                            <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" /><rect x="2" y="9" width="4" height="12" /><circle cx="4" cy="4" r="2" /></svg>
+                        </a>
+                        <a href="#" aria-label="Email" class="tc-team-social">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" /><polyline points="22,6 12,13 2,6" /></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
 
-            <div class="tc-partner-card__divider"></div>
-            <div class="tc-partner-card__name">Team Member 4</div>
-            <div class="tc-partner-card__type">des4</div>
+            <div class="tc-team-card">
+                <div class="tc-team-card__avatar">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="40" height="40">
+                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                        <circle cx="12" cy="7" r="4" />
+                    </svg>
+                </div>
+                <div class="tc-team-card__accent"></div>
+                <div class="tc-team-card__body">
+                    <div class="tc-team-card__name">Team Member 3</div>
+                    <div class="tc-team-card__role">des3</div>
+                    <div class="tc-team-card__divider"></div>
+                    <div class="tc-team-card__socials">
+                        <a href="#" aria-label="LinkedIn" class="tc-team-social">
+                            <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" /><rect x="2" y="9" width="4" height="12" /><circle cx="4" cy="4" r="2" /></svg>
+                        </a>
+                        <a href="#" aria-label="Email" class="tc-team-social">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" /><polyline points="22,6 12,13 2,6" /></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tc-team-card">
+                <div class="tc-team-card__avatar">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="40" height="40">
+                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                        <circle cx="12" cy="7" r="4" />
+                    </svg>
+                </div>
+                <div class="tc-team-card__accent"></div>
+                <div class="tc-team-card__body">
+                    <div class="tc-team-card__name">Team Member 4</div>
+                    <div class="tc-team-card__role">des4</div>
+                    <div class="tc-team-card__divider"></div>
+                    <div class="tc-team-card__socials">
+                        <a href="#" aria-label="LinkedIn" class="tc-team-social">
+                            <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" /><rect x="2" y="9" width="4" height="12" /><circle cx="4" cy="4" r="2" /></svg>
+                        </a>
+                        <a href="#" aria-label="Email" class="tc-team-social">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" /><polyline points="22,6 12,13 2,6" /></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
 </section>
 
+<AppFooter />
+
 <style>
-    /* ── PARTNERS ── */
-    .tc-partners {
+    /* ── Variables ── */
+    :root {
+        --tc-orange: #EC7C26;
+        --tc-orange-d: #C9621A;
+        --tc-coal: #0F0A05;
+        --tc-muted: #6B7280;
+        --tc-radius: 14px;
+        --tc-transition: 220ms ease;
+    }
+
+    *, *::before, *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        font-family: 'Barlow', 'Inter', sans-serif;
         background: #f8f5f0;
-        padding: clamp(3rem, 7vw, 6rem) clamp(1.25rem, 4vw, 3rem);
-        text-align: center;
+        overflow-x: hidden;
     }
 
-    .tc-partners__title {
-        font-family: 'Bebas Neue', 'Barlow', sans-serif;
-        font-size: clamp(1.8rem, 4vw, 3rem);
-        letter-spacing: 0.04em;
-        color: var(--tc-coal);
-        margin-bottom: 0.6rem;
+    /* ── PAGE HERO STRIP ── */
+    .tc-page-hero {
+        position: relative;
+        padding: clamp(5rem, 12vw, 9rem) clamp(1.25rem, 4vw, 3rem) clamp(2.5rem, 5vw, 4rem);
+        overflow: hidden;
+        display: flex;
+        align-items: flex-end;
+        min-height: clamp(200px, 30vw, 320px);
     }
 
-    .tc-partners__sub {
-        font-size: clamp(0.85rem, 1.5vw, 0.95rem);
-        font-weight: 300;
-        color: var(--tc-muted);
-        margin-bottom: clamp(2rem, 4vw, 3rem);
+    .tc-page-hero__bg {
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(135deg, var(--tc-coal) 0%, #2C1A08 55%, #1a0d00 100%);
     }
 
-    /* .tc-partners__grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: clamp(1rem, 2.5vw, 1.5rem);
-    max-width: 720px;
-    margin: 0 auto;
-    }  */
+        .tc-page-hero__bg::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background-image: radial-gradient(circle, rgba(236,124,38,0.08) 1px, transparent 1px);
+            background-size: 40px 40px;
+        }
 
-    /*  tc-partners__grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: clamp(1rem, 2.5vw, 1.5rem);
-    max-width: 520px;
-    margin: 0 auto;
-    } */
-
-    .tc-partners__grid {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap: clamp(1rem, 2.5vw, 1.5rem);
-        max-width: 960px;
+    .tc-page-hero__content {
+        position: relative;
+        z-index: 2;
+        max-width: 1200px;
+        width: 100%;
         margin: 0 auto;
     }
 
-   
-
-    /* .tc-partner-card {
-    background: #fff;
-    border: 1px solid rgba(236,124,38,0.15);
-    border-radius: var(--tc-radius);
-    padding: clamp(1.5rem, 3vw, 2rem) 1.25rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0.75rem;
-    transition: box-shadow var(--tc-transition), transform var(--tc-transition), border-color var(--tc-transition);
-    } */
-
-    .tc-partner-card:hover {
-        box-shadow: 0 10px 30px rgba(236,124,38,0.16);
-        transform: translateY(-5px);
-        border-color: rgba(236,124,38,0.40);
+    .tc-page-hero__title {
+        font-family: 'Bebas Neue', 'Barlow', sans-serif;
+        font-size: clamp(2.5rem, 7vw, 5.5rem);
+        letter-spacing: 0.03em;
+        color: #fff;
+        line-height: 0.95;
+        margin-bottom: 0.6rem;
     }
 
-    .tc-partner-card__img {
-        width: clamp(70px, 10vw, 100px);
-        height: clamp(70px, 10vw, 100px);
-        object-fit: contain;
-        border-radius: 10px;
-        padding: 8px;
-        background: #f8f5f0;
-        border: 1px solid rgba(236,124,38,0.12);
-        transition: border-color var(--tc-transition);
+    .tc-page-hero__sub {
+        font-size: clamp(0.85rem, 1.5vw, 1rem);
+        font-weight: 300;
+        color: rgba(255,255,255,0.55);
+        max-width: 440px;
     }
 
-    .tc-partner-card:hover .tc-partner-card__img {
-        border-color: rgba(236,124,38,0.45);
-    }
-
-    .tc-partner-card__divider {
-        width: 28px;
-        height: 1.5px;
-        background: rgba(236,124,38,0.35);
-        border-radius: 2px;
-    }
-
-    .tc-partner-card__name {
-        font-size: 0.78rem;
+    .tc-section-label {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        font-size: 0.7rem;
         font-weight: 700;
-        letter-spacing: 0.08em;
+        letter-spacing: 0.22em;
+        text-transform: uppercase;
+        color: var(--tc-orange);
+        margin-bottom: 0.75rem;
+    }
+
+        .tc-section-label::before {
+            content: '';
+            width: 24px;
+            height: 1.5px;
+            background: var(--tc-orange);
+        }
+
+    /* ── TEAM SECTION ── */
+    .tc-team {
+        background: #f8f5f0;
+        padding: clamp(2.5rem, 6vw, 5rem) clamp(1.25rem, 4vw, 3rem) clamp(3rem, 7vw, 6rem);
+    }
+
+    .tc-team__inner {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .tc-team__grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: clamp(1rem, 2.5vw, 1.5rem);
+    }
+
+    /* ── TEAM CARD ── */
+    .tc-team-card {
+        background: #fff;
+        border: 1px solid rgba(236,124,38,0.12);
+        border-radius: var(--tc-radius);
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transition: transform var(--tc-transition), box-shadow var(--tc-transition), border-color var(--tc-transition);
+        position: relative;
+    }
+
+        .tc-team-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(236,124,38,0.15);
+            border-color: rgba(236,124,38,0.35);
+        }
+
+    /* orange accent bar at top */
+    .tc-team-card__accent {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 3px;
+        background: linear-gradient(90deg, transparent, var(--tc-orange), transparent);
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: transform 0.35s ease;
+    }
+
+    .tc-team-card:hover .tc-team-card__accent {
+        transform: scaleX(1);
+    }
+
+    /* avatar area */
+    .tc-team-card__avatar {
+        width: 100%;
+        aspect-ratio: 1 / 1;
+        background: linear-gradient(135deg, #1a0d00, #2e1800);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: rgba(236,124,38,0.45);
+        position: relative;
+        overflow: hidden;
+    }
+
+        .tc-team-card__avatar::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background-image: radial-gradient(circle, rgba(236,124,38,0.06) 1px, transparent 1px);
+            background-size: 24px 24px;
+        }
+
+    /* body */
+    .tc-team-card__body {
+        padding: 1.25rem 1.1rem 1.4rem;
+        text-align: center;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 4px;
+    }
+
+    .tc-team-card__name {
+        font-size: clamp(0.82rem, 1.4vw, 0.95rem);
+        font-weight: 700;
+        letter-spacing: 0.06em;
         text-transform: uppercase;
         color: var(--tc-coal);
     }
 
-    .tc-partner-card__type {
-        font-size: 0.72rem;
+    .tc-team-card__role {
+        font-size: clamp(0.72rem, 1.2vw, 0.82rem);
         font-weight: 300;
         color: var(--tc-muted);
+        margin-bottom: 4px;
     }
 
-   
-    /* @@media (max-width: 480px) {
-    .tc-partners__grid {
-    grid-template-columns: 1fr;
-    max-width: 280px;
+    .tc-team-card__divider {
+        width: 24px;
+        height: 1.5px;
+        background: rgba(236,124,38,0.35);
+        border-radius: 2px;
+        margin: 8px 0;
     }
-    } */
+
+    /* social icons */
+    .tc-team-card__socials {
+        display: flex;
+        gap: 8px;
+    }
+
+    .tc-team-social {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 32px;
+        height: 32px;
+        border-radius: 8px;
+        background: rgba(236,124,38,0.10);
+        border: 1px solid rgba(236,124,38,0.20);
+        color: var(--tc-orange);
+        text-decoration: none;
+        transition: background var(--tc-transition), border-color var(--tc-transition), transform var(--tc-transition);
+    }
+
+        .tc-team-social:hover {
+            background: var(--tc-orange);
+            border-color: var(--tc-orange);
+            color: #fff;
+            transform: translateY(-2px);
+        }
+
+    /* ── RESPONSIVE ── */
+    @@media (max-width: 1024px) {
+        .tc-team__grid {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
 
     @@media (max-width: 767px) {
-        .tc-partners__grid {
+        .tc-team__grid {
             grid-template-columns: repeat(2, 1fr);
-            max-width: 480px;
+            gap: 1rem;
+        }
+
+        .tc-team-card__body {
+            padding: 1rem 0.9rem 1.2rem;
         }
     }
 
-    @@media (max-width: 480px) {
-        .tc-partners__grid {
+    @@media (max-width: 420px) {
+        .tc-team__grid {
             grid-template-columns: 1fr;
-            max-width: 280px;
+            max-width: 300px;
+            margin: 0 auto;
         }
     }
-
 </style>
-
-<!-- ═══════════════════════════════════════ FOOTER ═══════════════════════════════════════ -->
-<AppFooter />
